@@ -1,85 +1,126 @@
 /* Définition des polices personnalisées */
 
-@font-face
-{
-    font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('polices/ballpark.woff') format('woff'),
-         url('polices/ballpark.ttf') format('truetype'),
-         url('polices/ballpark.svg#BallparkWeiner') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: "BallparkWeiner";
+  src: url("polices/ballpark.eot");
+  src: url("polices/ballpark.eot?#iefix") format("embedded-opentype"),
+    url("polices/ballpark.woff") format("woff"),
+    url("polices/ballpark.ttf") format("truetype"),
+    url("polices/ballpark.svg#BallparkWeiner") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face
+@font-face {
+  font-family: "Dayrom";
+  src: url("polices/dayrom.eot");
+  src: url("polices/dayrom.eot?#iefix") format("embedded-opentype"),
+    url("polices/dayrom.woff") format("woff"),
+    url("polices/dayrom.ttf") format("truetype"),
+    url("polices/dayrom.svg#Dayrom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#bloc_page
 {
-    font-family: 'Dayrom';
-    src: url('polices/dayrom.eot');
-    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-header
-{
-    background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-#pont{
-    display: flex;
-    width: 900px;
-}
-header{
-    background: url('images/separateur.png') repeat-x bottom;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-body{
-    background-image: url('images/fond_jaune.png');
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #181818;
-}
-#bloc_page{
     width: 900px;
     margin: auto;
 }
-/*.imagezozor{
-    float: left;
-}*/
-.dessous{
-    clear: left;
+header {
+  background: url("images/separateur.png") repeat-x bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-.align{
-    text-align: left;
-}
-#navigation{
-    list-style-type: none;
+#titre{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
 }
-nav a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: #181818;
-    font-family: Dayrom;
+#logo{
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 0px;
+    padding-left: 0px;
 }
-nav a:hover{
-    color: #760001;
-    border-bottom: 3px solid #760001;
+#pont {
+  display: flex;
 }
-h1, h2{
-    font-family: Dayrom;
+body {
+  background-image: url("images/fond_jaune.png");
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #181818;
 }
-p{
-    text-align: justify;
+.dessous {
+  clear: left;
 }
-header h1{
-    font-family: BallparkWeiner;
+.align {
+  text-align: left;
+}
+#navigation {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #181818;
+  font-family: Dayrom;
+  font-size: 1.3em;
+  padding-bottom: 3px;
+}
+nav a:hover {
+  color: #760001;
+  border-bottom: 3px solid #760001;
+}
+h1, h2 {
+  font-family: Dayrom;
+}
+h2{
+  font-size: 1em;
+}
+p {
+  text-align: justify;
+}
+header h1 {
+  font-family: BallparkWeiner, sans-serif;
+  font-size: 2.5em;
+  margin: 0 0 0 10px;
+}
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+}
+#foot {
+  display: flex;
+}
+.photos {
+  width: 310px;
+}
+.amis {
+  width: 310px;
+}
+.tweet {
+  width: 280px;
+}
+#listamis {
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  list-style-type: none;
+  margin-left: 5px;
+  padding-left: 5px;
+  margin-top: 0px;
+}
+ul a{
+  text-decoration: none;
+  color: #760001;
+}
+.photos img{
+    border: 1px solid black;
+}
+.titreamis{
+    padding-left: 10px;
 }
