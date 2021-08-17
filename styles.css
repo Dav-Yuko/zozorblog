@@ -87,14 +87,13 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  font-size: 1.3em;
+  font-family: Dayrom;
 }
 nav a {
   margin-right: 15px;
   text-decoration: none;
   color: #181818;
-  font-family: Dayrom;
-  font-size: 1.3em;
-  padding-bottom: 3px;
 }
 nav a:hover {
   color: #760001;
@@ -105,8 +104,13 @@ h2 {
   font-family: Dayrom, sans-serif;
   font-size: 1.1em;
 }
+.epingle{
+  vertical-align: middle;
+  margin-right: 10px;
+}
 section h1 {
   text-transform: uppercase;
+  font-size: 1.3em;
 }
 section h2 {
   text-transform: uppercase;
@@ -115,6 +119,8 @@ section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #bulle {
   position: absolute;
@@ -146,7 +152,7 @@ aside {
   text-align: center;
 }
 #media a {
-  padding-right: 4px;
+  padding-right: 2px;
 }
 p {
   text-align: justify;
@@ -168,6 +174,9 @@ footer {
     url("images/ombre.png") repeat-x top;
   padding-top: 25px;
 }
+footer h2 {
+  font-size: 0.8em;
+}
 footer p {
   font-size: 0.8em;
 }
@@ -182,6 +191,7 @@ footer p {
 }
 .tweet {
   width: 280px;
+  margin-left: 15px;
 }
 #listamis {
   display: flex;
@@ -192,6 +202,7 @@ ul {
   margin-left: 5px;
   padding-left: 5px;
   margin-top: 0px;
+  margin-right: 15px;
 }
 ul a {
   text-decoration: none;
